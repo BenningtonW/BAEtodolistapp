@@ -1,12 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>Todo List App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to your To-do List Application</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- CSS only -->
 </head>
+
 <body>
-    
-</body>
+
+    <body>
+        <header>
+            <h1>My Personal To-do App</h1>
+
+            <form id="newtaskform">
+                <input type="text" id="input-task" placeholder="Add new task...">
+
+                <input type="submit" id="new-task-submit" value="Add task" />
+
+            </form>
+        </header>
+
+        <main>
+
+            <section class="task-list">
+                <h2>Tasks</h2>
+
+                <div class="task">
+                    <div class="content">
+                        <input type="text" class="text" value="Tasks to be completed" readonly />
+
+
+                    </div class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+
+                </div>
+
+
+                </div>
+
+            </section>
+        </main>
+
+
+
+        <script src="index.js"></script>
+       
+        
+
+    </body>
+
 </html>
