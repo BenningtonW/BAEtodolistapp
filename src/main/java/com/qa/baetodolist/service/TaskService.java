@@ -40,9 +40,9 @@ public class TaskService {
 	}
 	
 	// Update a task
-		public Task update(long id, String task) {
+		public Task update(long id, Task task) {
 			Task existing = repo.findById(id).get(); // Get the EXISTING task
-			existing.setTaskToDo(task); // Change EXISTING task.
+			existing.setTaskToDo(task.getTaskToDo()); // Change EXISTING task.
 			return repo.saveAndFlush(existing);
 		}
 		

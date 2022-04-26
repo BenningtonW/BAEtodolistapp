@@ -24,7 +24,7 @@ public class Task {
 	public Task() {}
 
 	
-//  used for creating
+//  used for creating and inserting
 	public String getTaskToDo() {
 		return taskToDo;
 	}
