@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 
+
 import com.qa.baetodolist.domain.Task;
 import com.qa.baetodolist.repo.TaskRepo;
 
@@ -39,9 +40,9 @@ public class TaskService {
 	}
 	
 	// Update a task
-		public Task update(long id, Task task) {
+		public Task update(long id, String task) {
 			Task existing = repo.findById(id).get(); // Get the EXISTING task
-			existing.setTask(task.getTask()); // Change EXISTING task.
+			existing.setTaskToDo(task); // Change EXISTING task.
 			return repo.saveAndFlush(existing);
 		}
 		
