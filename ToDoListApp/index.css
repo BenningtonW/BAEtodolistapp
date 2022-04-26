@@ -80,6 +80,7 @@ main {
 
 #tasks .task .content .text {
     color: rgb(105, 25, 146);
+    flex: 1 1 0%;
     font-size: 1.1rem;
     width: 100%;
     display: block;
