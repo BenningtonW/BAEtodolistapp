@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS task CASCADE;
+
+CREATE TABLE task (
+    id INT AUTO_INCREMENT,
+    tasktodo VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+);
