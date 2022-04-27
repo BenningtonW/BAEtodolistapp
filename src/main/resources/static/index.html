@@ -7,7 +7,7 @@
     <title>Todo List App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css" />
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.1/axios.min.js" integrity="sha512-AzbhRn44jMMB3r+tBzw1apXgpDYtzqcA8KYXDR26a7PaTCjIwi/N6n0lyi8QnroHqn0DEUcQ6buOw22SBqh4VQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -55,7 +55,9 @@
 
 
         <script src="index.js"></script>
-        
+        <script>
+            axios.get("http://localhost:8080/").then(response => console.log("RESPONSE: ", reponse)).catch(err => console.error(err));
+        </script>
 
     </body>
 
