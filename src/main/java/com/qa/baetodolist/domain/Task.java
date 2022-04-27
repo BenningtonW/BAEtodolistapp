@@ -24,7 +24,13 @@ public class Task {
 	public Task() {}
 
 	
-//  used for creating and inserting
+public Task(String taskToDo) {
+		super();
+		this.taskToDo = taskToDo;
+	}
+
+
+	//  used for creating and inserting
 	public String getTaskToDo() {
 		return taskToDo;
 	}

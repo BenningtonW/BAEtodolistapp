@@ -56,7 +56,10 @@
 
         <script src="index.js"></script>
         <script>
-            axios.get("http://localhost:8080/").then(response => console.log("RESPONSE: ", reponse)).catch(err => console.error(err));
+            axios.get("http://localhost:8080/get").then(response => console.log("RESPONSE: ", response)).catch(err => console.error(err));
+            axios.post("http://localhost:8080/post").then(response => console.log("RESPONSE: ", response)).catch(err => console.error(err));
+            axios.put("http://localhost:8080/put").then(response => console.log("RESPONSE: ", response)).catch(err => console.error(err));
+            axios.delete("http://localhost:8080/delete").then(response => console.log("RESPONSE: ", response)).catch(err => console.error(err));
         </script>
 
     </body>

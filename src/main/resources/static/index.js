@@ -11,7 +11,7 @@ window.addEventListener('load', () => {
             alert("Please fill out the task");
             return;
         }
-
+// 
         const taskEl = document.createElement("div");
         taskEl.classList.add("task");
         
@@ -64,7 +64,7 @@ window.addEventListener('load', () => {
         taskDeleteEl.addEventListener('click', () => {
             listEl.removeChild(taskEl);
         });
-    
+    // 
     });
 
 });

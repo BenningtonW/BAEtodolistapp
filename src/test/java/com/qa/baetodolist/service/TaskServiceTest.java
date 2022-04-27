@@ -60,7 +60,7 @@ public class TaskServiceTest {
 	
 	@Test
 	public void updateTest() {
-		Task input = new Task("go shopping");
+		Task input = new Task("clean house");
 		Optional<Task> existing = Optional.of(new Task(1L, "go shopping"));
 		Task output = new Task(1L, "clean house");
 		
