@@ -38,7 +38,7 @@ public class TaskControllerIntegrationTest {
 
 	@Test
 	public void createTest() throws Exception {
-		Task entry = new Task("go shopping");
+		Task entry = new Task("clean house");
 		String entryAsJSON = mapper.writeValueAsString(entry);
 
 		Task result = new Task(2L, "clean house");
