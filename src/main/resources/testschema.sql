@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS user CASCADE;
+
+CREATE TABLE user (
+    id INT AUTO_INCREMENT,
+    tasktodo VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+);
