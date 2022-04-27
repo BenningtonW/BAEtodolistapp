@@ -3,7 +3,7 @@ package com.qa.baetodolist.service;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
+//import org.springframework.web.bind.annotation.PathVariable;
 
 
 import com.qa.baetodolist.domain.Task;
@@ -31,7 +31,7 @@ public class TaskService {
 	
 	// Get By Task (get one Task)
 		public Task getByTask(String task) {
-			return repo.findByTask(task).get();
+			return repo.findByTaskToDo(task).get();
 	}
 	
 	// Create a new task

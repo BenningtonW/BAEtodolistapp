@@ -9,7 +9,7 @@ import com.qa.baetodolist.domain.Task;
 @Repository
 public interface TaskRepo extends JpaRepository <Task, Long> {
 	
-Optional<Task> findByTask(String task);
+Optional<Task> findByTaskToDo(String task);
 	
 
 	
