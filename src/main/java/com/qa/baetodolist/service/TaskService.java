@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 
 import com.qa.baetodolist.domain.Task;
+import com.qa.baetodolist.exceptions.UserNotFoundException;
 import com.qa.baetodolist.repo.TaskRepo;
 
 
@@ -21,7 +22,9 @@ public class TaskService {
 	
 	// Get By ID (get one Task)
 	public Task getById(long id) {
-		return repo.findById(id).get(); //.get() will either get the Task (if exists) OR throw NoSuchElementException
+//		return repo.findById(id).get(); //.get() will either get the User (if exists) OR throw NoSuchElementException
+//		return repo.findById(id).orElseThrow(() -> new UserNotFoundExceptionWithID(id));
+		return repo.findById(id).orElseThrow(UserNotFoundException::new);
 	}
 	
 	// Get ALL tasks
