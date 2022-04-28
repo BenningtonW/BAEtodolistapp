@@ -47,7 +47,8 @@ const renderTask = (task) => {
     const taskEditEl = document.createElement("button");
     taskEditEl.classList.add("edit");
     taskEditEl.innerHTML = "Edit";
-    //XXX
+    taskEditEl.id=task.id; 
+    
 
     const taskDeleteEl = document.createElement("button");
     taskDeleteEl.classList.add("delete");
@@ -95,7 +96,10 @@ const renderTask = (task) => {
     
     }).catch(err => console.error(err));}
 
+    const updateTask  = () =>{
+        axios.put(`http://localhost:8080/update/${parseInt(taskEditEl.input.task)}`, data).then((res) => console.log(res)).catch((err) => alert(err));
 
+    }
 
     const deleteTask = id => {
         axios.delete(`http://localhost:8080/delete/${id}`)
