@@ -27,7 +27,7 @@ public class TaskController {
 		this.service = service;
 	}
 
-	// Get by ID (get one User)
+	// Get by ID (get one Task)
 	@GetMapping("/getById/{id}") // localhost:8080/getById/id
 	public ResponseEntity<Task> getById(@PathVariable long id) {
 		return new ResponseEntity<> (service.getById(id), HttpStatus.OK);
