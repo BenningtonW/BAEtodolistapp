@@ -6,7 +6,7 @@
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-
+// stops from refreshing page
         const task = input.value;
         if (!task) {
             alert("Please fill out the task");
@@ -97,7 +97,7 @@ const renderTask = (task) => {
     }).catch(err => console.error(err));}
 
     const updateTask  = () =>{
-        axios.put(`http://localhost:8080/update/${parseInt(taskEditEl.input.task)}`, data).then((res) => console.log(res)).catch((err) => alert(err));
+        axios.put(`http://localhost:8080/update/${parseInt(taskContentEl.task)}`, data).then((res) => console.log(res)).catch((err) => alert(err));
 
     }
 
